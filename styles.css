@@ -1,1 +1,86 @@
 
+:root {
+	--primary: #6366f1;
+	--bg: #f8fafc;
+	--card-bg: #ffffff;
+	--text: #1e293b;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: var(--bg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 20px;
+}
+
+.container {
+	background: var(--card-bg);
+	padding: 2.5rem;
+	border-radius: 16px;
+	box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 4000px;
+	text-align: center;
+}
+
+#url {
+	color: var(--primary);
+	font-size: 1.1rem;
+	margin-bottom: 2rem;
+	word-break: break-all;
+	font-weight: 500;
+}
+
+.input-group {
+	text-align: left;
+	margin-bottom: 1.5rem;
+}
+
+label {
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: #64748b;
+	margin-bottom: 0.5rem;
+}
+
+input {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	font-size: 1rem;
+	transition: all 0.2s ease;
+	box-sizing: border-box;
+}
+
+input:focus {
+	outline: none;
+	border-color: var(--primary);
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+#button {
+	width: 100%;
+	background-color: var(--primary);
+	color: white;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: transform 0.1s ease, background 0.2s ease;
+}
+
+#button:hover {
+	background-color: #4f46e5;
+}
+
+#button:active {
+	transform: scale(0.98);
+}
